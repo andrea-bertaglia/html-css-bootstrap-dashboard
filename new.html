@@ -23,7 +23,136 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    NUOVO PRODOTTO
+    <!-- Header class="d-sm-block d-md-none"-->
+    <header>
+      <nav class="navbar d-sm-block d-md-none bg-dark" data-bs-theme="dark">
+        <!-- Container -->
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+          <!-- /Logo -->
+
+          <!-- Hamburger button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <!-- /Hamburger button -->
+        </div>
+        <!-- /Container -->
+      </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main container (sidebar and main) -->
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <!------------------ Sidebar ------------------>
+        <div
+          class="sidebar pt-3 sidebar-expand-md col-md-4 col-lg-3 collapse d-md-block bg-dark"
+          id="navbarSupportedContent"
+        >
+          <div class="d-none d-md-block">
+            <a
+              href="index.html"
+              class="d-flex mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <span class="fs-4">Bootstrap Dashboard</span>
+            </a>
+            <hr class="text-white" />
+          </div>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link text-white"
+                aria-current="page"
+              >
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#home"></use>
+                </svg>
+                <i class="bi bi-house-door-fill pe-1"></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="plans.html" class="nav-link text-white">
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                <i class="bi bi-graph-up pe-1"></i>
+                Sponsorizzazione
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-calendar2-check-fill pe-1"></i>
+                Prodotti
+              </a>
+            </li>
+            <li>
+              <a href="new.html" class="nav-link active">
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                <i class="bi bi-plus-lg pe-1"></i>
+                Nuovo prodotto
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#grid"></use>
+                </svg>
+                <i class="bi bi-person-fill pe-1"></i>
+                Clienti
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <div class="dropdown">
+            <a
+              href="#"
+              class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt=""
+                width="32"
+                height="32"
+                class="rounded-circle me-2"
+              />
+              <strong>Mario Rossi</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+        <!------------------ /Sidebar ------------------>
+
+        <!------------------ Main ------------------>
+        <main class="col-md-8 col-lg-9 pt-3">NUOVO PRODOTTO</main>
+        <!------------------ /Main ------------------>
+      </div>
+    </div>
+    <!-- /Main Container (sidebar and main) -->
 
     <!-- Bootstrap script -->
     <script

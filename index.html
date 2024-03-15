@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="d-xs-block d-md-none">
-      <nav class="navbar bg-dark" data-bs-theme="dark">
+    <!-- Header class="d-sm-block d-md-none"-->
+    <header>
+      <nav class="navbar d-sm-block d-md-none bg-dark" data-bs-theme="dark">
         <!-- Container -->
-        <div class="container">
+        <div class="container-fluid">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">LOGO</a>
+          <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
           <!-- /Logo -->
 
           <!-- Hamburger button -->
@@ -42,7 +42,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            Menu
+            <i class="bi bi-list"></i>
           </button>
           <!-- /Hamburger button -->
         </div>
@@ -59,55 +59,59 @@
           class="sidebar pt-3 sidebar-expand-md col-md-4 col-lg-3 collapse d-md-block bg-dark"
           id="navbarSupportedContent"
         >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-          >
-            <svg class="bi pe-none me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Sidebar</span>
-          </a>
-          <hr />
+          <div class="d-none d-md-block">
+            <a
+              href="index.html"
+              class="d-flex mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <span class="fs-4">Bootstrap Dashboard</span>
+            </a>
+            <hr class="text-white" />
+          </div>
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">
-                <svg class="bi pe-none me-2" width="16" height="16">
+              <a href="index.html" class="nav-link active" aria-current="page">
+                <svg class="bi pe-none" width="16" height="16">
                   <use xlink:href="#home"></use>
                 </svg>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none me-2" width="16" height="16">
-                  <use xlink:href="#speedometer2"></use>
-                </svg>
+                <i class="bi bi-house-door-fill pe-1"></i>
                 Dashboard
               </a>
             </li>
             <li>
+              <a href="plans.html" class="nav-link text-white">
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                <i class="bi bi-graph-up pe-1"></i>
+                Sponsorizzazione
+              </a>
+            </li>
+            <li>
               <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none me-2" width="16" height="16">
+                <svg class="bi pe-none" width="16" height="16">
                   <use xlink:href="#table"></use>
                 </svg>
-                Orders
+                <i class="bi bi-calendar2-check-fill pe-1"></i>
+                Prodotti
+              </a>
+            </li>
+            <li>
+              <a href="new.html" class="nav-link text-white">
+                <svg class="bi pe-none" width="16" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                <i class="bi bi-plus-lg pe-1"></i>
+                Nuovo prodotto
               </a>
             </li>
             <li>
               <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none me-2" width="16" height="16">
+                <svg class="bi pe-none" width="16" height="16">
                   <use xlink:href="#grid"></use>
                 </svg>
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none me-2" width="16" height="16">
-                  <use xlink:href="#people-circle"></use>
-                </svg>
-                Customers
+                <i class="bi bi-person-fill pe-1"></i>
+                Clienti
               </a>
             </li>
           </ul>
@@ -126,7 +130,7 @@
                 height="32"
                 class="rounded-circle me-2"
               />
-              <strong>mdo</strong>
+              <strong>Mario Rossi</strong>
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
               <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -140,12 +144,7 @@
         <!------------------ /Sidebar ------------------>
 
         <!------------------ Main ------------------>
-        <main class="col-md-8 col-lg-9 pt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur
-          inventore in ab laborum, blanditiis mollitia facilis eligendi iste
-          sunt ad doloremque maxime suscipit porro facere deserunt excepturi
-          voluptas! Voluptates!
-        </main>
+        <main class="col-md-8 col-lg-9 pt-3">INDEX</main>
         <!------------------ /Main ------------------>
       </div>
     </div>
