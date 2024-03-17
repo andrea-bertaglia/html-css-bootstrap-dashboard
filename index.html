@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header class="d-sm-block d-md-none"-->
+    <!-- Header -->
     <header>
       <nav class="navbar d-sm-block d-md-none bg-dark" data-bs-theme="dark">
         <!-- Container -->
@@ -52,11 +52,11 @@
     <!-- /Header -->
 
     <!-- Main container (sidebar and main) -->
-    <div class="container-fluid vh-100">
+    <div class="container-fluid">
       <div class="row">
         <!------------------ Sidebar ------------------>
         <div
-          class="sidebar pt-3 sidebar-expand-md col-md-4 col-lg-3 collapse d-md-block bg-dark"
+          class="sidebar pt-3 sidebar-expand-md col-md-3 col-lg-3 collapse d-md-block bg-dark"
           id="navbarSupportedContent"
         >
           <div class="d-none d-md-block">
@@ -71,45 +71,30 @@
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
               <a href="#" class="nav-link text-white" aria-current="page">
-                <svg class="bi pe-none" width="16" height="16">
-                  <use xlink:href="#home"></use>
-                </svg>
                 <i class="bi bi-house-door-fill pe-1"></i>
                 Dashboard
               </a>
             </li>
             <li>
               <a href="plans.html" class="nav-link text-white">
-                <svg class="bi pe-none" width="16" height="16">
-                  <use xlink:href="#speedometer2"></use>
-                </svg>
                 <i class="bi bi-graph-up pe-1"></i>
                 Sponsorizzazione
               </a>
             </li>
             <li>
               <a href="index.html" class="nav-link active">
-                <svg class="bi pe-none" width="16" height="16">
-                  <use xlink:href="#table"></use>
-                </svg>
                 <i class="bi bi-archive-fill pe-1"></i>
                 Prodotti
               </a>
             </li>
             <li>
               <a href="new.html" class="nav-link text-white">
-                <svg class="bi pe-none" width="16" height="16">
-                  <use xlink:href="#speedometer2"></use>
-                </svg>
                 <i class="bi bi-plus-lg pe-1"></i>
                 Nuovo prodotto
               </a>
             </li>
             <li>
               <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none" width="16" height="16">
-                  <use xlink:href="#grid"></use>
-                </svg>
                 <i class="bi bi-person-fill pe-1"></i>
                 Clienti
               </a>
@@ -144,16 +129,15 @@
         <!------------------ /Sidebar ------------------>
 
         <!------------------ Main ------------------>
-        <main class="col-md-8 col-lg-9 pt-3">
+        <main class="col-md-9 col-lg-9 pt-3">
           <div class="container">
             <div class="row">
-
               <!-- col Titolo principale -->
-              
+
               <div
-                class="col d-flex justify-content-between align-items-center"
+                class="col d-flex justify-content-between align-items-start pb-2"
               >
-                <h2 class="pb-2">10 prodotti trovati</h2>
+                <h2>10 prodotti trovati</h2>
                 <div
                   class="btn-group"
                   role="group"
@@ -171,333 +155,416 @@
               <hr />
               <!-- col Tabella prodotti -->
               <div class="col">
-                <table class="table">
+                <table class="table align-middle">
                   <thead>
                     <tr>
                       <th scope="col">Nome</th>
                       <th class="text-center" scope="col">Prezzo</th>
-                      <th class="text-center" scope="col">Stato</th>
+                      <th class="text-center d-none d-md-block" scope="col">
+                        Stato
+                      </th>
                       <th class="text-center" scope="col">Azioni</th>
                     </tr>
                   </thead>
                   <tbody>
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTklWLsBixcocRZ-qNLFrNNgxGNz12a_yYOBw&usqp=CAU"
+                            src="./img/samsung.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Smartphone Samsung Galaxy S21</span class="fw-semibold d-block">
-                            <span class="fw-light"
+                            <span class="fw-medium d-block"
+                              >Smartphone Samsung Galaxy S21</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
                               >Display AMOLED, Fotocamera Ultra Wide, Batteria a
                               lunga durata</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">799.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>799.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTzttgli1Q8O4Ke_hxw_lBhyUktXxrEa2qnG6WHDYW_ebXERod1jV6ld_uCPPsIN5RHRL_uBLlDxDejr68QJkpZ9BxeAG8WeqCK6KgxjDDynHWHZsqD6JKzd9ocy7lCRJo2O0pyBIbUg&usqp=CAc"
+                            src="./img/macbook.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Apple MacBook Pro 13"</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Processore M1, SSD ultraveloce, Display Retina</span
+                            <span class="fw-medium d-block"
+                              >Apple MacBook Pro 13"</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Processore M1, SSD ultraveloce, Display
+                              Retina</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">1299.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>1299.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIGvHsVy31C_JkCWxFPQOLCgXm1a43arGOXDA_FqIg7kL2dKSCa3pa&usqp=CAE&s"
+                            src="./img/watch.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">SmartSmartwatch Apple Watch Series 6</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Monitoraggio attività, Misurazione ossigeno nel sangue, Display Always-On</span
+                            <span class="fw-medium d-block"
+                              >SmartSmartwatch Apple Watch Series 6</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Monitoraggio attività, Misurazione ossigeno nel
+                              sangue, Display Always-On</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">429.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>429.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MTJV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1694014871985"
+                            src="./img/airpods.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Auricolari Wireless Apple AirPods Pro</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</span
+                            <span class="fw-medium d-block"
+                              >Auricolari Wireless Apple AirPods Pro</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Cancellazione attiva del rumore, Resistenza
+                              all'acqua e al sudore</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">279.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>279.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://media.direct.playstation.com/is/image/psdglobal/PS5-Slim-Hero-4"
+                            src="./img/ps5.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Console Sony PlayStation 5</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</span
+                            <span class="fw-medium d-block"
+                              >Console Sony PlayStation 5</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Gaming ad alta definizione, Tempi di caricamento
+                              rapidi, Supporto per giochi 4K</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">499.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>499.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://m.media-amazon.com/images/I/51Q31ss7GBL._AC_.jpg"
+                            src="./img/asus.jpg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Monitor Gaming ASUS ROG Strix XG27UQ</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Schermo 4K UHD, Frequenza di aggiornamento 144Hz, Tecnologia HDR</span
+                            <span class="fw-medium d-block"
+                              >Monitor Gaming ASUS ROG Strix XG27UQ</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Schermo 4K UHD, Frequenza di aggiornamento 144Hz,
+                              Tecnologia HDR</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">999.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>999.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCHatNK06BAXCJRH0-GtnJjCCwUM6w-gQCw&usqp=CAU"
+                            src="./img/hp.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Stampante Multifunzione HP LaserJet Pro MFP M28w</span class="fw-semibold d-block">
-                            <span class="fw-light"
+                            <span class="fw-medium d-block"
+                              >Stampante Multifunzione HP LaserJet Pro MFP
+                              M28w</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
                               >Stampa, Scansione, Copia, Connessione Wi-Fi</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">159.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-danger text-danger bg-white rounded-circle bi bi-x fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>159.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-danger text-danger bg-white rounded-circle bi bi-x"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://m.media-amazon.com/images/I/51DyYNmnSwL._AC_UF1000,1000_QL80_.jpg"
+                            src="./img/tp-link.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Router Wi-Fi Mesh TP-Link Deco X20</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Copertura fino a 560 mq, Velocità fino a 1800 Mbps, Gestione tramite app</span
+                            <span class="fw-medium d-block"
+                              >Router Wi-Fi Mesh TP-Link Deco X20</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Copertura fino a 560 mq, Velocità fino a 1800
+                              Mbps, Gestione tramite app</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">199.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>199.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://images.stockx.com/images/Western-Digital-WD_BLACK-SN850-NVMe-SSD-1TB-with-Heatsink-WDS100T1XHE-00AFY0.png?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1631561241"
+                            src="./img/western-d.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">SSD NVMe Western Digital Black SN850</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Capacità 1TB, Velocità di lettura fino a 7000 MB/s, Tecnologia PCle Gen4</span
+                            <span class="fw-medium d-block"
+                              >SSD NVMe Western Digital Black SN850</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Capacità 1TB, Velocità di lettura fino a 7000
+                              MB/s, Tecnologia PCle Gen4</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">229.00 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-success text-success bg-white rounded-circle bi bi-check2 fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>229.00 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-success text-success bg-white rounded-circle bi bi-check2"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
                     <!-- Item -->
                     <tr>
-                      <th scope="row">
+                      <td scope="row">
                         <div class="d-flex gap-2">
                           <img
-                            src="https://resource.logitech.com/content/dam/gaming/en/non-braid/hyjal-g502-hero/g502-hero-gallery-1-nb.png"
+                            src="./img/logitech.jpeg"
                             alt="Product"
                             width="50"
                             height="50"
                           />
                           <div>
-                            <span class="fw-semibold d-block">Mouse Gaming Logitech G502 HERO</span class="fw-semibold d-block">
-                            <span class="fw-light"
-                              >Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</span
+                            <span class="fw-medium d-block"
+                              >Mouse Gaming Logitech G502 HERO</span
+                            >
+                            <span class="fw-light d-none d-xl-block"
+                              >Sensore HERO 25K, 11 pulsanti programmabili, Peso
+                              personalizzabile</span
                             >
                           </div>
                         </div>
-                      </th>
-                      <td class="align-middle">79.99 €</td>
-                      <td class="text-center align-middle">
-                        <button class="border border-danger text-danger bg-white rounded-circle bi bi-x fs-6">
-                        </button>
                       </td>
-                      <td class="text-center align-middle">
-                        <button class="border border-primary text-primary bg-white rounded bi bi-pencil me-2 fs-6">
-                        </button>
-                        <button class="border border-danger text-danger bg-white rounded bi bi-trash-fill fs-6">
-                        </button>
-                      </td> 
-                    </tr> 
+                      <td>79.99 €</td>
+                      <td class="text-center d-none d-md-table-cell">
+                        <button
+                          class="border border-danger text-danger bg-white rounded-circle bi bi-x"
+                        ></button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            class="border border-primary text-primary bg-white rounded bi bi-pencil-fill me-2"
+                          ></button>
+                          <button
+                            class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                          ></button>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- /Item -->
+                  </tbody>
                 </table>
               </div>
               <!-- /col Tabella prodotti -->
-
-            </div> <!-- chiusura row -->
-          </div> <!-- chiusura container -->
+            </div>
+            <!-- chiusura row -->
+          </div>
+          <!-- chiusura container -->
         </main>
         <!------------------ /Main ------------------>
       </div>
