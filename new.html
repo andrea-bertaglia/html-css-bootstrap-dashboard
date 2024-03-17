@@ -77,9 +77,6 @@
             </li>
             <li>
               <a href="plans.html" class="nav-link text-white">
-                <svg class="bi pe-none" width="16" height="16">
-                  <use xlink:href="#speedometer2"></use>
-                </svg>
                 <i class="bi bi-graph-up pe-1"></i>
                 Sponsorizzazione
               </a>
@@ -132,7 +129,151 @@
         <!------------------ /Sidebar ------------------>
 
         <!------------------ Main ------------------>
-        <main class="col-md-9 col-lg-9 pt-3">NUOVO PRODOTTO</main>
+        <main class="col-md-9 pt-3">
+          <div class="container">
+
+            <!-- row header -->
+            <div class="row py-4 text-center">
+                <h4>Crea nuovo prodotto</h2>
+                <span class="fw-lighter d-block pb-1">I campi contrassegnati con un asterisco (*) sono obbligatori.</span>
+                <span class="fw-lighter pb-4">Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione</span>
+            </div>
+            <!-- end row header -->
+
+            <!-- row form -->
+            <form class="row pb-5">
+              <div class="col-12 col-lg-8">
+              <!-- Name -->
+              <div class="row pb-3">
+                <label for="email" class="col-sm-2 col-form-label">Nome</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" placeholder="Samsung Galaxy 10 Plus" id="text">
+                </div>
+              </div>
+              <!-- Price -->
+              <div class="row pb-3">
+                <label for="price" class="col-sm-2 col-form-label">Prezzo</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" placeholder="99.00" id="price">
+                </div>
+              </div>
+              <!-- Brand -->
+              <div class="row pb-3">
+                <label for="brand" class="col-sm-2 col-form-label">Marca</label>
+                <div class="col-sm-10">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--- Seleziona ---</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Tp-link">Tp-Link</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Description -->
+              <div class="row pb-3">
+                <div>
+                  <textarea class="form-control " placeholder="Inserisci qui la descrizione del prodotto, massimo 1000 caratteri" id="description" rows="8"></textarea>
+                </div>
+              </div>
+              <!-- Upload img -->
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" aria-label="Upload file">
+                <span class="input-group-text">Immagine</span>
+              </div>
+              <!-- Availability -->
+              <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio3">Fuori produzione</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio3">In arrivo</label>
+              </div>
+              </div>
+              <div class="col-12 col-lg-4">
+              <!-- Features -->
+              <fieldset class="row">
+                <div>
+                  <div class="border rounded-top p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="yes" id="feat_camera" checked>
+                      <label class="form-check-label" for="camera">
+                        fotocamera principale
+                      </label>
+                      <div class="small">
+                        foto di alta qualità e registrare video nitidi
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-top-0 p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="yes" id="feat_oled">
+                      <label class="form-check-label" for="oled">
+                        schermo OLED
+                      </label>
+                      <div class="small">
+                        offre colori vividi per un'esperienza visiva straordinaria.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-top-0 p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="yes" id="feat_octa">
+                      <label class="form-check-label" for="octa">
+                        processore Octa-core
+                      </label>
+                      <div class="small">
+                        prestazioni fluide e veloci per eseguire le applicazioni più esigenti
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-top-0 p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="yes" id="feat_wireless">
+                      <label class="form-check-label" for="wireless">
+                        ricarica wireless
+                      </label>
+                      <div class="small">
+                        consente di ricaricare lo smartphone comodamente senza l'uso di cavi
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-top-0 p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="yes" id="feat_5g">
+                      <label class="form-check-label" for="5g">
+                        connessione 5G
+                      </label>
+                      <div class="small">
+                        navigazione ultra veloce e streaming senza interruzioni
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-top-0 rounded-bottom p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="yes" id="feat_nfc">
+                      <label class="form-check-label" for="nfc">
+                        tecnologia NFC
+                      </label>
+                      <div class="small">
+                        per effettuare pagamenti senza contatto
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary">Salva</button>
+              </div>
+            </form>
+            <!-- end row form -->
+          </div>
+          <!-- end container -->
+        </main>
         <!------------------ /Main ------------------>
       </div>
     </div>
@@ -146,3 +287,5 @@
     ></script>
   </body>
 </html>
+
+
