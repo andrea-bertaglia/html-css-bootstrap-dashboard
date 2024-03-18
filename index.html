@@ -214,6 +214,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -259,6 +261,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -304,6 +308,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -349,6 +355,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -394,6 +402,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -439,6 +449,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -484,6 +496,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -529,6 +543,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -574,6 +590,8 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
@@ -619,11 +637,49 @@
                           ></button>
                           <button
                             class="border border-danger text-danger bg-white rounded bi bi-trash-fill"
+                            data-bs-toggle="modal"
+                            data-bs-target="#trashModal"
                           ></button>
                         </div>
                       </td>
                     </tr>
                     <!-- /Item -->
+
+                    <!-- Trash Modal -->
+                    <div
+                      class="modal"
+                      id="trashModal"
+                      tabindex="-1"
+                      aria-labelledby="trashModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-3 shadow">
+                          <div class="modal-body p-4 text-center">
+                            <h5 class="mb-0">Elimina prodotto</h5>
+                            <p class="mb-0">
+                              L'eliminazione sarà irreversibile, sei sicuro?
+                            </p>
+                          </div>
+                          <div class="modal-footer flex-nowrap p-0">
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"
+                            >
+                              <strong>Si, continua</strong>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"
+                              data-bs-dismiss="modal"
+                            >
+                              Annulla
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /Trash Modal -->
                   </tbody>
                 </table>
               </div>
