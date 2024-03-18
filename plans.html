@@ -101,7 +101,7 @@
             </li>
           </ul>
           <hr />
-          <div class="dropdown">
+          <div class="dropdown pb-4">
             <a
               href="#"
               class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
@@ -117,12 +117,19 @@
               />
               <strong>Mario Rossi</strong>
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <ul
+              class="dropdown-menu w-100 dropdown-menu-dark border-secondary text-small shadow"
+            >
+              <li>
+                <a class="dropdown-item text-secondary" href="#"
+                  >Impostazioni</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-secondary" href="#">Profilo</a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary" /></li>
+              <li><a class="dropdown-item text-secondary" href="#">Esci</a></li>
             </ul>
           </div>
         </div>
@@ -131,7 +138,7 @@
         <!------------------ Main ------------------>
         <main class="col-md-9">
           <!-- container main -->
-          <div class="container my-4 bg-light border">
+          <div class="container-flex m-4 bg-light border">
             <div class="row text-center m-3">
               <h1>Trova il piano perfetto per te!</h1>
               <p>
@@ -155,6 +162,7 @@
             </div>
             <!-- Plans card -->
             <div class="row justify-content-center gap-5 py-5">
+              <!-- Free plan -->
               <div class="col-10 col-lg-3 card shadow-sm p-0">
                 <div class="card-header text-center">Gratis</div>
                 <div class="card-body text-center">
@@ -172,6 +180,9 @@
                   >
                 </div>
               </div>
+              <!-- /Free plan -->
+
+              <!-- Premium plan -->
               <div class="col-10 col-lg-3 card shadow-sm border-primary p-0">
                 <div class="card-header text-center bg-primary text-white">
                   Premium
@@ -189,6 +200,9 @@
                   <a href="#" class="btn btn-primary d-block mt-4">Prosegui</a>
                 </div>
               </div>
+              <!-- /Premium plan -->
+
+              <!-- Enterprise plan -->
               <div class="col-10 col-lg-3 card shadow-sm p-0">
                 <div class="card-header text-center">Enterprise</div>
                 <div class="card-body text-center">
@@ -206,6 +220,7 @@
                   >
                 </div>
               </div>
+              <!-- /Enterprise plan -->
             </div>
           </div>
           <!-- end container main -->
