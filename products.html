@@ -170,8 +170,16 @@
                   <thead>
                     <tr>
                       <th scope="col">Nome</th>
-                      <th class="text-center" scope="col">Prezzo</th>
-                      <th class="text-center d-none d-md-block" scope="col">
+                      <th
+                        class="text-center d-none d-sm-table-cell"
+                        scope="col"
+                      >
+                        Prezzo
+                      </th>
+                      <th
+                        class="text-center d-none d-md-table-cell"
+                        scope="col"
+                      >
                         Stato
                       </th>
                       <th class="text-center" scope="col">Azioni</th>
@@ -202,7 +210,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">799.00 €</td>
+                      <td class="small d-none d-sm-table-cell">799.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -249,7 +257,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">1299.00 €</td>
+                      <td class="small d-none d-sm-table-cell">1299.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -296,7 +304,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">429.00 €</td>
+                      <td class="small d-none d-sm-table-cell">429.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -343,7 +351,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">279.00 €</td>
+                      <td class="small d-none d-sm-table-cell">279.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -390,7 +398,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">499.00 €</td>
+                      <td class="small d-none d-sm-table-cell">499.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -437,7 +445,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">999.00 €</td>
+                      <td class="small d-none d-sm-table-cell">999.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -484,7 +492,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">159.00 €</td>
+                      <td class="small d-none d-sm-table-cell">159.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -531,7 +539,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">199.00 €</td>
+                      <td class="small d-none d-sm-table-cell">199.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -578,7 +586,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">229.00 €</td>
+                      <td class="small d-none d-sm-table-cell">229.00 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -625,7 +633,7 @@
                         </div>
                       </td>
                       <!-- Item price -->
-                      <td class="small">79.99 €</td>
+                      <td class="small d-none d-sm-table-cell">79.99 €</td>
                       <!-- Item availability -->
                       <td class="text-center d-none d-md-table-cell">
                         <button
@@ -651,13 +659,16 @@
 
                     <!-- Trash Modal -->
                     <div
-                      class="modal"
+                      class="modal fade"
                       id="trashModal"
                       tabindex="-1"
                       aria-labelledby="trashModalLabel"
                       aria-hidden="true"
                     >
-                      <div class="modal-dialog" role="document">
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
                         <div class="modal-content rounded-3 shadow">
                           <div class="modal-body p-4 text-center">
                             <h5 class="mb-0">Elimina prodotto</h5>
